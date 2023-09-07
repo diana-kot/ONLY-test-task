@@ -1,0 +1,128 @@
+@import '../../styles/variables.scss';
+
+.slider-des {
+	padding: 95px 0px;
+	&__wrapper {
+		padding: 0 69px;
+	}
+	&__swiper {
+		max-width: 100%;
+		position: relative;
+		z-index: 1;
+		margin: 0 15px;
+	}
+
+	&-btn {
+		position: absolute;
+		z-index: 3;
+		top: calc(50% - 71px);
+	}
+
+	&-left {
+		left: 20px;
+	}
+
+	&-right {
+		right: 52px;
+	}
+
+	.slide-desc {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		text-align: left;
+		&__year {
+			color: $color-iric-light;
+			font-family: $font-sub;
+			font-size: 25px;
+			font-weight: 400;
+			line-height: 120%;
+			text-transform: uppercase;
+		}
+
+		&__txt {
+			color: $black-blue;
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 30px;
+			overflow-wrap: normal;
+			max-width: 320px;
+			margin-top: 16px;
+		}
+	}
+}
+
+@media (max-width: 1225px) {
+	.slider-des {
+		padding: 130px 0px;
+	}
+}
+
+@media (max-width: 997px) {
+	.slider-des {
+		&-right {
+			right: 20px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.slider-des {
+		&__wrapper {
+			padding: 0 60px;
+		}
+		&-right {
+			right: 20px;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.slider-des {
+		&__wrapper {
+			padding: 0 20px;
+		}
+		&__swiper {
+			margin: 0px 0px 0px 20px;
+		}
+	}
+}
+
+@media (max-width: 599px) {
+	.slider-des {
+		padding: 20px 0px;
+		margin-bottom: 68px;
+		&__swiper {
+			position: relative;
+			margin: 0 15px;
+		}
+
+		&__line {
+			margin: 0 20px;
+			height: 2px;
+			background-color: $color-liner;
+		}
+
+		&__wrapper {
+			padding: 0px;
+			.swiper-wrapper {
+				margin-bottom: 78px;
+			}
+		}
+		.slide-desc {
+			&__year {
+				font-size: 16px;
+			}
+
+			&__txt {
+				font-size: 14px;
+				line-height: 20px;
+				overflow-wrap: normal;
+			}
+		}
+
+		.swiper-slide-next {
+			opacity: 0.4;
+		}
+	}
+}

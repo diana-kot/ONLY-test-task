@@ -1,0 +1,19 @@
+@import '../../styles/variables.scss';
+
+.pagination-slider {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 10px;
+	&__item {
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+		background: $black-blue;
+		opacity: 0.4;
+		cursor: pointer;
+		&_active {
+			opacity: 1;
+		}
+	}
+}

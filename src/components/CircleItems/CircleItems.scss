@@ -1,0 +1,83 @@
+@import '../../styles/variables.scss';
+
+.circle-items {
+	position: relative;
+	border-radius: 50%;
+	width: 530px;
+	height: 530px;
+	border: 1px solid rgba(66, 86, 122, 0.2);
+}
+
+.circle-item {
+	position: absolute;
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	cursor: pointer;
+
+	&__btn {
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		border: 1px solid rgba(48, 62, 88, 0.3);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: $color-gray;
+		color: $black-blue;
+	
+
+		&-notactive {
+			transform: scale(calc(6 / 56));
+			background-color: $black-blue;
+			transition: all 0.5s 0s;
+		}
+	}
+	&:hover {
+		& .circle-item__btn-notactive {
+			transform: scale(1);
+			background-color: $color-gray;
+		}
+	}
+
+	&__txt {
+		position: absolute;
+		left: calc(100% + 20px);
+		top: calc(50% - 13px);
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 30px;
+		opacity: 1;
+		visibility: visible;
+		transition: all 0.5s 0s;
+		color: $black-blue;
+		&-notactive {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+}
+
+.item-box__text {
+	color: $black-blue !important;
+}
+
+@media (max-width: 768px) {
+	.circle-items {
+		width: 400px;
+		height: 400px;
+	}
+}
+
+@media (max-width: 600px) {
+	.circle-items {
+		width: 300px;
+		height: 300px;
+	}
+}
+
+@media (max-width: 599px) {
+	.circle-items {
+		display: none;
+	}
+}

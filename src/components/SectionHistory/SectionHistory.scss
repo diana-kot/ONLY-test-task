@@ -1,0 +1,51 @@
+@import '../../styles/variables.scss';
+
+.section-history {
+	position: relative;
+	padding-top: 170px;
+	border-left: 1px solid rgba(66, 86, 122, 0.1);
+	border-right: 1px solid #42567a1a;
+	min-height: 100vh;
+
+	&::before {
+		content: '';
+		position: absolute;
+		z-index: 0;
+		top: 0;
+		left: 50%;
+		width: 1px;
+		height: 100%;
+		background-color: $black-blue;
+		opacity: 0.1;
+	}
+
+}
+
+@media (max-width: 1225px) {
+	.section-history {
+		padding-top: 100px;
+	}
+}
+
+@media (max-width: 997px) {
+	.section-history {
+		padding-top: 0px;
+		border: none;
+	}
+}
+
+@media (max-width: 600px) {
+	.section-history {
+		padding-top: 59px;
+	
+	}
+}
+
+@media (max-width: 599px) {
+	.section-history {
+		&::before {
+			display: none;
+		}
+	
+	}
+}

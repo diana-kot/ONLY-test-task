@@ -1,0 +1,81 @@
+@import "../../styles/variables.scss";
+
+.button-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+	transition: all 0.3s ease 0s;
+
+    &_disabled {
+        cursor: auto;
+        opacity: 0.5;
+    }
+
+    &-border {
+        border: 1px solid rgba(66, 86, 122, 0.5);
+        &-none {
+            border: 1px solid $color-white;
+        }
+    }
+    &-transparent {
+      background-color: transparent;
+      &:hover, &:active {
+        background-color: $color-white;
+    }
+    }
+
+    &-white {
+        background-color: $color-white;
+        filter: drop-shadow(0px 0px 15px rgba(56, 119, 238, 0.10));
+       
+    }
+
+    &__icon {
+        &_direction {
+            &_left {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &-middle {
+		height: 50px;
+        width: 50px;
+	}
+
+	&-small {
+		height: 40px;
+        width: 40px;
+	}
+
+    &-hidden {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+@media (max-width: 768px) {
+	.button-slider {
+        &-middle {
+            height: 40px;
+            width: 40px;
+        }
+	}
+}
+
+@media (max-width: 599px) {
+	.button-slider {
+        &-middle {
+            height: 25px;
+            width: 25px;
+        }
+
+        &__icon {
+          width: 3px;
+          height: 6px;
+       
+        }
+	}
+}

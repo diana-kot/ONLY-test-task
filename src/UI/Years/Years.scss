@@ -1,0 +1,90 @@
+@import '../../styles/variables.scss';
+
+.years {
+	text-align: center;
+	font-family: $font-main;
+	font-size: 200px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 160px;
+	letter-spacing: -4px;
+
+	&__wrapper {
+		position: absolute;
+		display: flex;
+		align-items: center;
+		align-content: stretch;
+		column-gap: 90px;
+		padding: 39px;
+		padding-left: 0px;
+		padding-right: 60px;
+		padding-top: 14px;
+		z-index: -1;
+	}
+	&__from {
+		color: $color-iris;
+	}
+	&__to {
+		color: $color-fuschia;
+	}
+}
+
+@media (max-width: 1225px) {
+	.years {
+		font-size: 160px;
+
+		&__wrapper {
+			top: 300px;
+		}
+	}
+}
+
+@media (max-width: 997px) {
+	.years {
+		font-size: 120px;
+		line-height: 120%;
+	}
+}
+
+@media (max-width: 768px) {
+	.years {
+		font-size: 90px;
+
+		&__wrapper {
+			top: 235px;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.years {
+		font-size: 76px;
+
+		&__wrapper {
+			top: 190px;
+		}
+	}
+}
+
+@media (max-width: 599px) {
+	.years {
+		font-size: 56px;
+		letter-spacing: -1.12px;
+
+		&__wrapper {
+			position: relative;
+			top: 0;
+			left: 0;
+			padding: 0px;
+			padding-bottom: 42px;
+			column-gap: 28px;
+		}
+
+		&__from {
+			color: $color-iric-light;
+		}
+		&__to {
+			color: $color-fuschia-light;
+		}
+	}
+}

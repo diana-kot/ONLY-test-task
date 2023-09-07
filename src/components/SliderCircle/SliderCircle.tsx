@@ -14,7 +14,7 @@ import './SliderCircle.scss';
 
 export default function SliderCircle() {
     const [historyDates, setHistoryDates] = useState(historicalGroups);
-    const [activeIndex, setActiveIndex] = useState(2);
+    const [activeIndex, setActiveIndex] = useState(0);
 
     const windowWidth = useWindowWidth();
 

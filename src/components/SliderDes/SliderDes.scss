@@ -55,6 +55,17 @@
 @media (max-width: 1225px) {
 	.slider-des {
 		padding: 130px 0px;
+		&-right {
+			right: 20px;
+		}
+	}
+}
+
+@media (max-width: 1120px) {
+	.slider-des {
+		&-right {
+			right: 20px;
+		}
 	}
 }
 
@@ -69,19 +80,21 @@
 @media (max-width: 768px) {
 	.slider-des {
 		&__wrapper {
-			padding: 0 60px;
+			padding: 0 50px;
 		}
+		&-left {
+			left: 0px;
+		}
+	
 		&-right {
-			right: 20px;
+			right: 0px;
 		}
+	
 	}
 }
 
 @media (max-width: 600px) {
 	.slider-des {
-		&__wrapper {
-			padding: 0 20px;
-		}
 		&__swiper {
 			margin: 0px 0px 0px 20px;
 		}

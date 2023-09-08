@@ -32,7 +32,7 @@ export default function SliderDes({ descDate, activeIndex, setActiveIndex, items
             <div className="slider-des">
                 <div className="slider-des__swiper">
                     <Swiper
-                        spaceBetween={windowWidth < 997 ? (windowWidth < 480 ? 25 : 50) : 80}
+                        spaceBetween={windowWidth < 997 ? (windowWidth < 480 ? 25 : 70) : 80}
                         slidesPerView={windowWidth < 997 ? (windowWidth < 480 ? 1.5 : 2) : 3}
                         slidesPerGroup={1}
                         watchOverflow={true}

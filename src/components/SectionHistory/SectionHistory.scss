@@ -27,6 +27,12 @@
 	}
 }
 
+@media (max-width: 997px) {
+	.section-history {
+		border: none;
+	}
+}
+
 @media (max-width: 600px) {
 	.section-history {
 		padding-top: 59px;
